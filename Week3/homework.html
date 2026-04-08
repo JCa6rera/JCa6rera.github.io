@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Homework</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+        .boldonse-regular {
+        font-family: "Boldonse", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+
+        body {
+            background-color:aliceblue;
+        }
+
+        .card {
+            height: 750px;
+            width: 500px;
+            background-color: blue;
+            padding: 36px;
+            border-radius: 12px;
+            transition: all 0.3s;
+        }
+        
+        .card img {
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-family: "Boldonse", system-ui;
+            color: #519dcf;
+        }
+
+        p {
+            color: white;
+        }
+
+        .card:hover{
+            box-shadow: 8px 8px black;
+        }
+
+        button {
+            width: 100%;
+            color: red;
+            background-color: white;
+            border-color: black;
+            border-width: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="./assets/sparky.webp" alt="">
+
+        <h1>SPARKY THE GOAT</h1>
+
+        <p>Sparky is the legendary mascot of Arizona State University!</p>
+
+        <a href="https://en.wikipedia.org/wiki/Sparky_the_Sun_Devil">
+            <button>
+                Click here to learn more about Sparky!
+            </button>
+        </a>
+    </div>
+</body>
+</html>
