@@ -1,0 +1,125 @@
+/*
+.dm-sans-<uniquifier> {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.manrope-<uniquifier> {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+/* set our defaults and our constants. we need to use the ROOT selector */
+
+* {
+    /* CSS HEX */
+    --accent-color: #3e78b2ff;
+    --cobalt-blue: #004ba8ff;
+    --border-color: #4a525aff;
+    --shadow-grey: #24272bff;
+    --base: #07070aff;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* selecting just the body elements */
+body {
+    background-color: var(--base);
+    background-image: url(./assests/css-pattern-by-magicpattern.png);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    font-family: "Manrope", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    text-shadow: 5px 3px 2px var(--cobalt-blue);
+}
+
+.title {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 32px;
+    /*line-height: 84px;*/
+    text-shadow: 6px 3px 3px var(--cobalt-blue);
+}
+
+h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 2px var(--cobalt-blue);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.cards div {
+    background-color: var(--shadow-grey);
+    padding: 16px;
+    border: .5px solid var(--border-color);
+    border-radius: 4px;
+    flex: 1 1 300px;
+    transition: all 0.5s;
+}
+
+.cards div:hover {
+    box-shadow: 8px 8px var(--cobalt-blue);
+}
+
+.cards div > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 2px 1px 1px rgba(0,0,0,.4);
+
+}
+
+h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+
+.education > ul {
+    font-size: 24px;
+}
+
+.education > ul li {
+    padding: 16px;
+}
+
+.education > ul li::marker {
+    content: "-";
+}
+
+.year {
+    color: var(--accent-color);
+}
